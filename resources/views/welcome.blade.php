@@ -307,7 +307,7 @@
 				</div>
 			</div>
 			<div class="col-xs-12 col-sm-12 col-md-6 col-lg-6  section-right">
-				<img src="{{ asset('images/testUp.png.png')}}" alt=" CamerBitcoin Mobile Wallet" />
+				<img src="{{ asset('images/wallet.png')}}" alt=" CamerBitcoin Mobile Wallet" />
 			</div>
 			<div class="btn-wrapper">
 				<div class="btn-more opt-inverse">
