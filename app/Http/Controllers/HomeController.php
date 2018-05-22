@@ -22,7 +22,7 @@ class HomeController extends Controller
         /* @TODO : Set activation to false and send an email for verification */
         /* Redirect to /dashboard after success */  
         \Sentinel::register($credentials,true);
-        echo "Registered successfully ";
+        return redirect()->route('dashboard');
     }
 
     public function postLogin(Request $req){
@@ -32,10 +32,7 @@ class HomeController extends Controller
             "password" => $req->post("password")
         ];
         if( $user = \Sentinel::authenticate($credentials) ){
-            /* Redirecting to the dashboard */ 
-            
-            echo $user->username." Welcome";
-            exit; 
+             return redirect()->route('dashboard') ;
         }else{
            return Redirect::back()->withErrors(["Invalid email or password."])->withInput();
         }

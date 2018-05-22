@@ -109,11 +109,15 @@
 							</li>
 						</ul>
 					</div>
+					@if(Sentinel::check())
+						@include("partials.loggedInMenu")
+					@else
 					<div class="login">
 						<a class="btn" href="/en/login" role="button">
 							Login
 						</a>
 					</div>
+					@endif
 				</div>
 				<nav id="nav-primary" class="nav-primary">
 					<ul class="nav-menu">

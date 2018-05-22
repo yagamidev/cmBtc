@@ -14226,7 +14226,6 @@ html[dir=rtl] .popover {
 .profile-component {
     display: inline-block;
     float: right;
-    background-color: #275877;
     position: relative;
     text-transform: uppercase;
     transition: all .2s ease;
@@ -14268,9 +14267,7 @@ html[dir=rtl] .popover {
     border-bottom-color: #34749d;
     margin-left: -15px;
 }
-.profile-component.open, .profile-component:focus, .profile-component:hover {
-    background-color: #34749d;
-}
+
 .profile-component.open:after {
     opacity: 1;
 }
@@ -14284,16 +14281,17 @@ html[dir=rtl] .popover {
     display: none;
     list-style: none;
     position: absolute;
+    color: #888;
     padding: 0;
     margin: 0;
     right: -78px;
     top: 133%;
     font-size: 0;
-    background-color: #34749d;
+    background-color: #fff;
 }
 .profile-component-options li {
     padding: 0;
-    border-bottom: 1px solid #3a83b1;
+    border-bottom: 1px solid rgba(0,0,0,0.15);
 }
 .profile-component-options li:last-child {
     border-bottom: 0;
@@ -14312,19 +14310,18 @@ html[dir=rtl] .popover {
     text-align: center;
     text-decoration: none;
     display: block;
-    color: #fff;
     transition: all .2s ease;
 }
 .profile-component-options li.userMail i, .profile-component-options li.userMail span, .profile-component-options li a i, .profile-component-options li a span {
     display: inline-block;
-    color: #fff;
+    color: #888;
     margin-right: 10px;
 }
 #profile-information {
     padding: 0;
     margin: 0;
     box-sizing: border-box;
-    border-bottom: 4px dashed #275877;
+    border-bottom: 4px solid rgba(0,0,0,0.15);
     border-top: 0;
 }
 #profile-information li.more-button, #profile-information li.notification {
@@ -16306,7 +16303,7 @@ form.inline-form .input-group input {
     float: right;
 }
 #intro .intro-cta h1 {
-    color: #204d6a;
+    color: #3e4b92;
     text-transform: uppercase;
     font-weight: 800;
     margin-top: 75px;

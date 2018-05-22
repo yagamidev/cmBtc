@@ -13,15 +13,24 @@
 
 Route::get('/', function () {
     return view('welcome');
-});
+})->name("home") ;
 
 Route::get('/en/login', function(){
     return view('login');
-});
+})->name("login");
 
 Route::get('/en/signup',function(){
     return view('signup');
-});
+})->name("signup");
+
+Route::get('/en/dashboard',function(){
+    return view('dashboard');
+})->name("dashboard");
+
+Route::get('/logout',function(){
+    Sentinel::logout(); 
+    return View::make("welcome");
+})->name("logout");
 
 Route::post('/postLogin',"HomeController@postLogin");
 Route::post('/postRegister',"HomeController@postRegister");
