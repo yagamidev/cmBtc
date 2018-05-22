@@ -120,7 +120,7 @@
 			</div>
 			<div class="col-lg-6 col-md-5 col-sm-6 col-md-offset-1">
 				<div class="intro-cta">
-					<h1>ETHEREUM, BITCOIN CASH, LITECOIN ,BITCOIN EXCHANGE TO XAF & BLOCKCHAIN WALLET</h1>
+					<h1>BITCOIN, BITCOIN CASH, LTC, ETH EXCHANGE TO XAF & BLOCKCHAIN WALLET</h1>
 					<div class="cta-container">
 						<div class="vtable">
 							<div class="vcell">
@@ -183,7 +183,7 @@
 	<div class="container">
 		<div class="row section-imgL-textR">
 			<div class="col-xs-12 col-sm-12 col-md-6 col-lg-6  section-left">
-				<img src="{{ asset('/images/currenciesImage.jpg') }}" alt="Ethereum, NEM, Dash and Bitcoin Exchange" />
+				<img src="{{ asset('/images/Cryptocurrencies-Logos.png') }}" alt="Ethereum, NEM, Dash and Bitcoin Exchange" />
 			</div>
 			<div class="col-xs-12 col-sm-12 col-md-6 col-lg-6  section-right">
 				<div class="section-title-major">Cryptocurrency Exchange</div>
@@ -224,7 +224,7 @@
 	<div class="container">
 		<div class="row section-imgL-textR">
 			<div class="col-xs-12 col-sm-12 col-md-6 col-lg-6  section-left">
-				<img src="{{ asset('/images/yuscard.png')}}" alt="SpectroCoin Prepaid Card" />
+				<img src="{{ asset('/images/yuscard.png')}}" alt=" CamerBitcoin Prepaid Card" />
 			</div>
 			<div class="col-xs-12 col-sm-12 col-md-6 col-lg-6  section-right">
 				<div class="section-title-major">YusCard Prepaid Card</div>
@@ -303,27 +303,15 @@
 					</span>
 				</div>
 				<div id="responsive_elem">
-					<img src="vassets/images/_new_dir/ed165ef3a1e95a070c389602a5d952fb-wallet_section2.png" alt="SpectroCoin Mobile Wallet" />
-				</div>
-				<div id="app_logos">
-					<a href="../external.html?link=https://itunes.apple.com/us/app/spectrocoin-wallet/id923696089" target="_blank">
-						<img src="{{ asset('/images/google-play-badge.png')}}" alt="Apple Store" />
-					</a>
-					<a href="../external.html?link=https://play.google.com/store/apps/details?id=lt.spectrofinance.spectrocoin.android.wallet" target="_blank">
-						<img src="{{ asset('/images/google-play-badge.png')}}" alt="Google App Store" />
-					</a>
-					<a href="../external.html?link=http://www.windowsphone.com/en-us/store/app/spectrocoin/87726e8d-0bc7-480e-9ba2-2c4289f0c843" target="_blank">
-						<img src="{{ asset('/images/google-play-badge.png')}}" alt="Windows Store" />
-					</a>
+					<img src="#" alt=" CamerBitcoin Mobile Wallet" />
 				</div>
 			</div>
 			<div class="col-xs-12 col-sm-12 col-md-6 col-lg-6  section-right">
-				<img src="{{ asset('images/testUp.png')}}" alt="SpectroCoin Mobile Wallet" />
+				<img src="{{ asset('images/testUp.png.png')}}" alt=" CamerBitcoin Mobile Wallet" />
 			</div>
 			<div class="btn-wrapper">
 				<div class="btn-more opt-inverse">
-					Show More
-					<i class="fa fa-angle-down"></i>
+					Read more
 				</div>
 			</div>
 		</div>

@@ -4406,8 +4406,7 @@ html[dir=rtl] #page_promo, html[dir=rtl] #page_promo>.container {
 }
 #index_section7 .btn-wrapper {
     clear: both;
-    position: relative;
-    top: -200px;
+    margin-bottom: 20px;
 }
 @media(min-width:993px) and (max-width:1460px) {
     #index_section7 .section-left {
