@@ -121,6 +121,13 @@
 				</div>
 				<nav id="nav-primary" class="nav-primary">
 					<ul class="nav-menu">
+						@if(Sentinel::check())
+						<li class="">
+							<a href="{{route('dashboard')}}" title="Exchange">
+								Dashboard
+							</a>
+						</li>
+						@endif
 						<li class="">
 							<a href="en/bitcoin-exchange.html" title="Exchange">
 								Exchange

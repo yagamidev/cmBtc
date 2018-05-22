@@ -14288,6 +14288,7 @@ html[dir=rtl] .popover {
     top: 133%;
     font-size: 0;
     background-color: #fff;
+    box-shadow:0 6px 12px rgba(0,0,0,0.175);
 }
 .profile-component-options li {
     padding: 0;
@@ -14881,44 +14882,44 @@ html[dir=rtl] .popover {
     transform: scale(.5);
 }
 #dashboard-secondary-nav .secondary-nav li a .icon.icon-wallet {
-    background-image: url(/assets/images/icons/generated/account_nav_sprite.png);
+    background-image: url(/images/account_nav_sprite.png);
     background-position: 0 -310px;
     width: 80px;
     height: 60px;
 }
 #dashboard-secondary-nav .secondary-nav li a .icon.icon-exchange {
-    background-image: url(/assets/images/icons/generated/account_nav_sprite.png);
+    background-image: url(/images/account_nav_sprite.png);
     background-position: 0 -124px;
     width: 80px;
     height: 60px;
 }
 #dashboard-secondary-nav .secondary-nav li a .icon.icon-deposit {
-    background-image: url(/assets/images/icons/generated/account_nav_sprite.png);
+    background-image: url(/images/account_nav_sprite.png);
     background-position: 0 -62px;
     width: 80px;
     height: 60px;
 }
 #dashboard-secondary-nav .secondary-nav li a .icon.icon-withdraw {
-    background-image: url(/assets/images/icons/generated/account_nav_sprite.png);
+    background-image: url(/images/account_nav_sprite.png);
     background-position: 0 -372px;
     width: 80px;
     height: 60px;
 }
 #dashboard-secondary-nav .secondary-nav li a .icon.icon-cards {
-    background-image: url(/assets/images/icons/generated/account_nav_sprite.png);
+    background-image: url(/images/account_nav_sprite.png);
     background-position: 0 0;
     width: 80px;
     height: 60px;
 }
 #dashboard-secondary-nav .secondary-nav li a .icon.icon-projects {
-    background-image: url(/assets/images/icons/generated/account_nav_sprite.png);
+    background-image: url(/images/account_nav_sprite.png);
     background-position: 0 -248px;
     width: 80px;
     height: 60px;
     transform: scale(.4);
 }
 #dashboard-secondary-nav .secondary-nav li a .icon.icon-integrate {
-    background-image: url(/assets/images/icons/generated/account_nav_sprite.png);
+    background-image: url(/images/account_nav_sprite.png);
     background-position: 0 -186px;
     width: 80px;
     height: 60px;

@@ -5,7 +5,7 @@
 	<div id="notification-count" class="notification-count"></div>
 	<ul id="notification" class="profile-component-options">
 		<ul id="profile-information">
-			<li id="userMail" class="userMail copy-element title-tooltip" title-tooltip="" title="yagamidev@gmail.com">yagamidev@gmail.com</li>
+			<li id="userMail" class="userMail copy-element title-tooltip" title-tooltip="" title="{{ Sentinel::check()->email }} ">{{Sentinel::check()->email }} </li>
 		</ul>
 		<li>
 			<a href="/en/walletAPI.html">
