@@ -1,5 +1,5 @@
-.btn, button,.btn-link-new {
-    background: linear-gradient(to right,#1976D2 , #00BCD4) ;
+.btn, .btn:hover, button, button:hover,.btn-link-new , .btn-link-new:hover{
+    background: rgba(250, 159, 1, 0.712);
     color : #fff !important;
 }
 

@@ -3554,12 +3554,11 @@ table tbody tr td {
 }
 #ua_news_recent .btn-wrapper a, .btn-link-new {
     background-color: #204d6a;
-    border: 1px solid #204d6a;
     color: #fff!important;
 }
 #ua_news_recent .btn-wrapper a:hover, .btn-link-new:hover {
     text-decoration: none;
-    background-color: #2d709d;
+    background-color: 
 }
 #ua_news_recent .btn-wrapper a:active, #ua_news_recent .btn-wrapper a:focus, .btn-link-new:active, .btn-link-new:focus {
     text-decoration: none;
@@ -13208,9 +13207,8 @@ td, th {
     color: #fff;
 }
 .btn.btn-alternative {
-    background-color: #fff;
+    background-color: #275877;
     color: #275877;
-    border: 1px solid #266f9e;
     padding: 12px 30px;
 }
 .btn.btn-alternative i {
@@ -14130,7 +14128,6 @@ html[dir=rtl] .popover {
 .lan-switcher {
     display: inline-block;
     float: right;
-    background-color: #275877;
     vertical-align: middle;
     position: relative;
     text-transform: uppercase;
