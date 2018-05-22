@@ -95,17 +95,48 @@ class MigrationCartalystSentinel extends Migration
 
         Schema::create('users', function (Blueprint $table) {
             $table->increments('id');
+            $table->string('username',200);
             $table->string('email');
             $table->string('password');
             $table->text('permissions')->nullable();
             $table->timestamp('last_login')->nullable();
             $table->string('first_name')->nullable();
             $table->string('last_name')->nullable();
-            $table->string('nationalty')->nullable(); 
+            $table->string('nationality')->nullable(); 
             $table->timestamps();
 
             $table->engine = 'InnoDB';
             $table->unique('email');
+        });
+
+        Schema::create('orders',function(Blueprint $table){
+            $table->increments('id');
+            $table->integer('user_id');
+            $table->string('type',6);
+            $table->decimal('price_per_btc',18,9);
+            $table->decimal('btc_amount',18,9);
+            $table->timestamp('sell_order_date');
+            $table->timestamps();
+        });
+
+        Schema::create('trade_history',function(Blueprint $table){
+                $table->increments('id');
+                $table->integer('seller_id');
+                $table->integer('buyer_id');
+                $table->decimal('price_in_xaf',18,9);
+                $table->decimal('btc_amount',18,9);
+                $table->string('type',100);
+                $table->timestamp('trade_date');
+        });
+
+        Schema::create('active_orders',function(Blueprint $table){
+            $table->increments('id');
+            $table->integer('seller_id');
+            $table->integer('buyer_id');
+            $table->string('type',10);
+            $table->decimal('btc_amount',18,9);
+            $table->decimal('price',18,9);
+
         });
     }
 
@@ -123,5 +154,8 @@ class MigrationCartalystSentinel extends Migration
         Schema::drop('role_users');
         Schema::drop('throttle');
         Schema::drop('users');
+        Schema::drop('orders');
+        Schema::drop('active_orders');
+        Schema::drop('trade_history');
     }
 }
