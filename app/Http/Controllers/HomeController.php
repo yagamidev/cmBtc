@@ -4,9 +4,20 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 use Redirect; 
-
+use DB;
+use Coinbase\Wallet\Client;
+use Coinbase\Wallet\Configuration;
+use Coinbase\Wallet\Resource\Account;
+use Coinbase\Wallet\Resource\Address;
+use Coinbase\Wallet\Enum\CurrencyCode;
+use Coinbase\Wallet\Resource\Transaction;
+use Coinbase\Wallet\Value\Money;
+use Coinbase\Wallet\Exception\ClientException;
 class HomeController extends Controller
 {
+    private $apiKey = "E1EoRoHIZNQ35VPh";
+    private $apiSecret = "ffM18GiYW0HPfpvIrvZOHjgYQ1VxPQPG";
+
     public function postRegister(Request $req){
       $validator = $req->validate([
             'username' => "required|unique:users|max:255",
@@ -21,7 +32,20 @@ class HomeController extends Controller
         
         /* @TODO : Set activation to false and send an email for verification */
         /* Redirect to /dashboard after success */  
-        \Sentinel::register($credentials,true);
+        $user = \Sentinel::register($credentials,true);
+        
+        // Generating new addresses for the new user
+        // Labels follow the rules $user->username."currency".$user->id
+
+        DB::table("wallets")->insert([ 
+            ["user_id"=> $user->id,"currency_name"=>"BTC", "address"=>$this->generateBTCAddress($user->username."BTC".$user->id)["address"] ],
+
+            ["user_id"=> $user->id,"currency_name"=>"LTC", "address"=> $this->generateLTCAddress($user->username . "LTC" . $user->id)["address"] ],
+            ["user_id"=> $user->id,"currency_name"=>"BCH", "address"=> $this->generateBCHAddress($user->username . "BCH" . $user->id)["address"]],
+            ["user_id"=> $user->id,"currency_name"=>"ETH", "address"=> $this->generateETHAddress($user->username . "ETH" . $user->id)["address"]],
+            ["user_id"=> $user->id,"currency_name"=>"XAF", "address"=>null],
+        ]);
+
         return redirect()->route('dashboard');
     }
 
@@ -36,7 +60,100 @@ class HomeController extends Controller
         }else{
            return Redirect::back()->withErrors(["Invalid email or password."])->withInput();
         }
-         
-    
     }
+
+    /**
+     *  Generate a bitcoin address 
+     *  @param $param the label to assign to the address
+     * @return Address Object 
+     */
+    public function generateBTCAddress($param){
+        $configuration = Configuration::apiKey($this->apiKey, $this->apiSecret);
+        $client = Client::create($configuration);
+        $accounts = $client->getAccounts();
+        foreach ($accounts as $account) {
+            $address = new Address();
+            if ($account->getRawData()["currency"] == "BTC") {
+                $address->setName($param);
+                $client->createAccountAddress($account, $address);
+                break;
+            }
+           
+        }
+
+        return $address->getRawData();
+    }
+
+    /**
+     *  Generate a Litecoin address 
+     *  @param $param the label to assign to the address
+     * @return Address Object 
+     */
+
+    public function generateLTCAddress($param){
+        $configuration = Configuration::apiKey($this->apiKey, $this->apiSecret);
+        $client = Client::create($configuration);
+
+        $accounts = $client->getAccounts();
+        foreach ($accounts as $account) {
+            $address = new Address();
+            if ($account->getRawData()["currency"] == "LTC") {
+                $address->setName($param);
+                $client->createAccountAddress($account, $address);
+                break;
+            }
+           
+        }
+
+        return $address->getRawData();
+    }
+    /**
+     *  Generate a BCH address 
+     *  @param $param the label to assign to the address
+     * @return Address Object 
+     */
+
+    public function generateBCHAddress($param)
+    {
+        $configuration = Configuration::apiKey($this->apiKey, $this->apiSecret);
+        $client = Client::create($configuration);
+
+        $accounts = $client->getAccounts();
+        foreach ($accounts as $account) {
+            $address = new Address();
+            if ($account->getRawData()["currency"] == "BCH") {
+                $address->setName($param);
+                $client->createAccountAddress($account, $address);
+                break;
+            }
+            
+        }
+        return $address->getRawData();
+    }
+
+    /**
+     *  Generate a Litecoin address 
+     *  @param $param the label to assign to the address
+     * @return Address Object 
+     */
+
+    public function generateETHAddress($param)
+    {
+        $configuration = Configuration::apiKey($this->apiKey, $this->apiSecret);
+        $client = Client::create($configuration);
+
+        $accounts = $client->getAccounts();
+        foreach ($accounts as $account) {
+            $address = new Address();
+            if ($account->getRawData()["currency"] == "ETH") {
+                $address->setName($param);
+                $client->createAccountAddress($account, $address);
+                break;
+            }
+            
+        }
+
+        return $address->getRawData();
+    }
+
 }

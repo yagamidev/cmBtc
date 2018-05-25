@@ -129,6 +129,16 @@ class MigrationCartalystSentinel extends Migration
                 $table->timestamp('trade_date');
         });
 
+        Schema::create('transactions',function(Blueprint $table){
+                $table->increments("id");
+                $table->integer("from_user_id");
+                $table->integer("to_user_id");
+                $table->string("tx_type",30);
+                $table->decimal("amount",18,9);
+                $table->string("status",20);
+
+        });
+
         Schema::create('active_orders',function(Blueprint $table){
             $table->increments('id');
             $table->integer('seller_id');
@@ -138,6 +148,15 @@ class MigrationCartalystSentinel extends Migration
             $table->decimal('price',18,9);
 
         });
+
+        Schema::create('wallets',function(Blueprint $table){
+
+            $table->increments('id');
+            $table->integer('user_id');
+            $table->string("currency_name",10);
+            $table->string("address",255)->nullable();
+            $table->decimal("amount",18,9)->default(0.0000000); 
+        }); 
     }
 
     /**

@@ -80,13 +80,13 @@
     var errorTerms = document.querySelector(".errorTerms");
 
     form.addEventListener("submit",function(e){
-      console.log( test2);
       if( test2.checked == false ) {
+         e.preventDefault();
         test2.className+=" invalid-feedback";
         lab.className+=" invalid-feedback";
         errorTerms.style.display ="block";
       }
-        e.preventDefault();
+       
     },false);
 
 </script>
