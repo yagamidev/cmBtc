@@ -133,7 +133,7 @@ class MigrationCartalystSentinel extends Migration
                 $table->increments("id");
                 $table->integer("from_user_id");
                 $table->integer("to_user_id");
-                $table->string("tx_type",30);
+                $table->string("tx_type",30);  // sending or receiving 
                 $table->decimal("amount",18,9);
                 $table->string("status",20);
 
@@ -155,7 +155,8 @@ class MigrationCartalystSentinel extends Migration
             $table->integer('user_id');
             $table->string("currency_name",10);
             $table->string("address",255)->nullable();
-            $table->decimal("amount",18,9)->default(0.0000000); 
+            $table->string("label",30); 
+            $table->decimal("balance",18,9)->default(0.0000000); 
         }); 
     }
 

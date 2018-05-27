@@ -66,24 +66,34 @@
                 <div class="deposit-bitcoint-section history-balance">
                   
                   <div class="row" id="balances-row">
+                    @foreach( $wallets as $wallet)
                     <div class="col-md-6">
-                      <div class="panel panel-orange ">
+                      @switch($wallet->currency_name)
+                        @case("LTC")
+                          <div class="panel panel-blue">
+                            @break
+                        @case("XAF")
+                            <div class="panel panel-orange bankera">
+                              @break
+                        @default 
+                            <div class="panel panel-orange">
+                       @endswitch
                         <div class="panel-heading">
                           <div class="row">
-                            <div class="col-xs-4" style="font-size:3em">
-                              <i class="fa fa-btc " data-fa-transform="grow-6"></i>
+                            <div class="col-xs-2" style="font-size:2em;">
+                              <i class="fa fa-{{strtolower($wallet->currency_name)}} " data-fa-transform="grow-6"></i>
                             </div>
-                            <div class="col-xs-8 text-right huge title-tooltip" title-tooltip="" dir="ltr" title="0.0000000">0.0000000</div>
+                            <div class="col-xs-10 text-right huge title-tooltip" title-tooltip="" dir="ltr" title="{{ $wallet->balance}}">{{ $wallet->balance}}</div>
                           </div>
                           <div class="row">
                             <div class="col-xs-12 text-right">
-                              <div>&nbsp;
+                              <div>
                               </div>
-                              <div class="accName">BTC</div>
+                              <div class="accName">{{$wallet->currency_name}}</div>
                             </div>
                           </div>
                         </div>
-                        <a href="/en/account/history/btc">
+                        <a href="/en/account/history/{{ strtolower($wallet->currency_name)}}">
                           <div class="panel-footer">
                             <span class="pull-left">View account</span>
                             <span class="pull-right"><i class="fa fa-arrow-circle-right"></i></span>
@@ -92,113 +102,7 @@
                         </a>
                       </div>
                     </div>
-                    
-                    <div class="col-md-6">
-                      <div class="panel panel-blue ">
-                        <div class="panel-heading">
-                          <div class="row">
-                            <div class="col-xs-4" style="font-size:3em">
-                                <img src="{{ asset('/images/ltc.svg')}}" alt="LTC" srcset=""/>
-                            </div>
-                            <div class="col-xs-8 text-right huge title-tooltip" title-tooltip="" dir="ltr" title="0.0000000">0.0000000</div>
-                          </div>
-                          <div class="row">
-                            <div class="col-xs-12 text-right">
-                              <div>&nbsp;
-                              </div>
-                              <div class="accName">LTC</div>
-                            </div>
-                          </div>
-                        </div>
-                        <a href="/en/account/history/ltc">
-                          <div class="panel-footer">
-                            <span class="pull-left">View account</span>
-                            <span class="pull-right"><i class="fa fa-arrow-circle-right"></i></span>
-                            <div class="clearfix"></div>
-                          </div>
-                        </a>
-                      </div>
-                    </div>
-                    <div class="col-md-6">
-                      <div class="panel panel-orange ">
-                        <div class="panel-heading">
-                          <div class="row">
-                            <div class="col-xs-4" style="font-size:3em">
-                                <img src="{{ asset('/images/bch.svg')}}" alt="BCH" />
-                            </div>
-                            <div class="col-xs-8 text-right huge title-tooltip" title-tooltip="" dir="ltr" title="0.0000000">0.0000000</div>
-                          </div>
-                          <div class="row">
-                            <div class="col-xs-12 text-right">
-                              <div>&nbsp;
-                              </div>
-                              <div class="accName">BCH</div>
-                            </div>
-                          </div>
-                        </div>
-                        <a href="/en/account/history/btc">
-                          <div class="panel-footer">
-                            <span class="pull-left">View account</span>
-                            <span class="pull-right"><i class="fa fa-arrow-circle-right"></i></span>
-                            <div class="clearfix"></div>
-                          </div>
-                        </a>
-                      </div>
-                    </div>
-
-                    <div class="col-md-6">
-                      <div class="panel panel-blue ">
-                        <div class="panel-heading">
-                          <div class="row">
-                            <div class="col-xs-4" style="font-size:3em">
-                             <img src="{{ asset('/images/eth.svg')}}" alt="ETH"/>
-                            </div>
-                            <div class="col-xs-8 text-right huge title-tooltip" title-tooltip="" dir="ltr" title="0.0000000">0.0000000</div>
-                          </div>
-                          <div class="row">
-                            <div class="col-xs-12 text-right">
-                              <div>&nbsp;
-                              </div>
-                              <div class="accName">ETH</div>
-                            </div>
-                          </div>
-                        </div>
-                        <a href="/en/account/history/btc">
-                          <div class="panel-footer">
-                            <span class="pull-left">View account</span>
-                            <span class="pull-right"><i class="fa fa-arrow-circle-right"></i></span>
-                            <div class="clearfix"></div>
-                          </div>
-                        </a>
-                      </div>
-                    </div>
-                    <div class="col-md-6">
-                      <div class="panel panel-orange bankera">
-                        <div class="panel-heading">
-                          <div class="row">
-                            <div class="col-xs-4" style="font-size:3em">
-                              XAF
-                            </div>
-                            <div class="col-xs-8 text-right huge title-tooltip" title-tooltip="" dir="ltr" title="0.0000000">0.0000000</div>
-                          </div>
-                          <div class="row">
-                            <div class="col-xs-12 text-right">
-                              <div>&nbsp;
-                              </div>
-                              <div class="accName">XAF</div>
-                            </div>
-                          </div>
-                        </div>
-                        <a href="/en/account/history/btc">
-                          <div class="panel-footer">
-                            <span class="pull-left">View account</span>
-                            <span class="pull-right"><i class="fa fa-arrow-circle-right"></i></span>
-                            <div class="clearfix"></div>
-                          </div>
-                        </a>
-                      </div>
-                    </div>
-                    
+                    @endforeach
                   </div>
                 </div>
               </div>

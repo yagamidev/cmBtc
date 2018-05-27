@@ -36,14 +36,18 @@ class HomeController extends Controller
         
         // Generating new addresses for the new user
         // Labels follow the rules $user->username."currency".$user->id
+        $btcObject = $this->generateBTCAddress($user->username . "BTC" . $user->id);
+        $ltcObject = $this->generateLTCAddress($user->username . "LTC" . $user->id);
+        $bchObject = $this->generateBCHAddress($user->username . "BCH" . $user->id);
+        $ethObject = $this->generateETHAddress($user->username . "ETH" . $user->id);
 
         DB::table("wallets")->insert([ 
-            ["user_id"=> $user->id,"currency_name"=>"BTC", "address"=>$this->generateBTCAddress($user->username."BTC".$user->id)["address"] ],
+            ["user_id"=> $user->id,"currency_name"=>"BTC", "address"=> $btcObject["address"],"label"=> $btcObject["name"] ],
+            ["user_id"=> $user->id,"currency_name"=>"LTC", "address"=> $ltcObject["address"],"label"=> $ltcObject["name"] ],
+            ["user_id"=> $user->id,"currency_name"=>"BCH", "address"=> $bchObject["address"],"label"=> $bchObject["name"] ],
+            ["user_id"=> $user->id,"currency_name"=>"ETH", "address"=> $ethObject["address"],"label"=> $ethObject["name"] ],
+            ["user_id"=> $user->id,"currency_name"=>"XAF", "address"=>null,"label"=> $user->username . "XAF" . $user->id],
 
-            ["user_id"=> $user->id,"currency_name"=>"LTC", "address"=> $this->generateLTCAddress($user->username . "LTC" . $user->id)["address"] ],
-            ["user_id"=> $user->id,"currency_name"=>"BCH", "address"=> $this->generateBCHAddress($user->username . "BCH" . $user->id)["address"]],
-            ["user_id"=> $user->id,"currency_name"=>"ETH", "address"=> $this->generateETHAddress($user->username . "ETH" . $user->id)["address"]],
-            ["user_id"=> $user->id,"currency_name"=>"XAF", "address"=>null],
         ]);
 
         return redirect()->route('dashboard');

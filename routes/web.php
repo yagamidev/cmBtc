@@ -23,9 +23,7 @@ Route::get('/en/signup',function(){
     return view('signup');
 })->name("signup");
 
-Route::get('/en/dashboard',function(){
-    return view('dashboard');
-})->name("dashboard");
+Route::get('/en/dashboard',"DashboardController@index")->name("dashboard");
 
 Route::get('/logout',function(){
     Sentinel::logout(); 

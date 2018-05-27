@@ -1,0 +1,26 @@
+<?php
+
+namespace App\Http\Controllers;
+
+use Illuminate\Http\Request;
+use Redirect; 
+use DB; 
+class DashboardController extends Controller
+{
+ 
+    /**
+     * Shows the main page of the dashboard 
+     */
+
+     public function index(){
+    
+        if( $user = \Sentinel::check()){
+            $wallets = DB::table("wallets")->select('*')->get();
+            return view('dashboard',['wallets'=>$wallets]);
+        }else{
+            return Redirect::to('login');
+        }
+        
+     }
+
+}
