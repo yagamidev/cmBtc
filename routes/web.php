@@ -23,6 +23,8 @@ Route::get('/en/signup',function(){
     return view('signup');
 })->name("signup");
 
+Route::get('/en/account/history/{currency_name}',"DashboardController@accountDetails");
+
 Route::get('/en/dashboard',"DashboardController@index")->name("dashboard");
 
 Route::get('/logout',function(){

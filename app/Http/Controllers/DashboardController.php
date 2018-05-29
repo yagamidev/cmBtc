@@ -23,4 +23,15 @@ class DashboardController extends Controller
         
      }
 
+     public function accountDetails($currency_name){
+
+        if( \Sentinel::check()){
+            $user = \Sentinel::getUser(); 
+            
+            $accountInfo = DB::table("wallets")->where(["user_id"=>$user->id,"currency_name"=> $currency_name])->first();
+            return view("accountDetails")->with("accountInfo",$accountInfo);
+        }
+        return Redirect::to("/en/login"); 
+     }
+
 }
