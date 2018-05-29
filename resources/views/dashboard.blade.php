@@ -75,13 +75,16 @@
                         @case("XAF")
                             <div class="panel panel-orange bankera">
                               @break
+                        @case("ETH")
+                            <div class="panel panel-grey">
+                              @break
                         @default 
                             <div class="panel panel-orange">
                        @endswitch
                         <div class="panel-heading">
                           <div class="row">
                             <div class="col-xs-2" style="font-size:2em;">
-                              <i class="fa fa-{{strtolower($wallet->currency_name)}} " data-fa-transform="grow-6"></i>
+                              <i class="bt bt-{{strtolower($wallet->currency_name)}} bt-stack-3x" ></i>
                             </div>
                             <div class="col-xs-10 text-right huge title-tooltip" title-tooltip="" dir="ltr" title="{{ $wallet->balance}}">{{ $wallet->balance}}</div>
                           </div>

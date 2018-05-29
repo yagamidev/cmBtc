@@ -113,12 +113,12 @@
 					"symbolActiveColor": "rgba(242, 250, 254, 1)",
 					"belowLineFillColorFalling": "rgba(255, 74, 104, 0.05)",
 					"height": 500,
-					"width": 500
+					"width": 450
 					}
 					</script>
 				</div>
 			</div>
-			<div class="col-lg-6 col-md-5 col-sm-6 col-md-offset-1">
+			<div class="col-lg-6 col-md-5 col-sm-6">
 				<div class="intro-cta">
 					<h1>BITCOIN, BITCOIN CASH, LTC, ETH EXCHANGE TO XAF & BLOCKCHAIN WALLET</h1>
 					<div class="cta-container">

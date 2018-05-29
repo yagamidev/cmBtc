@@ -15528,23 +15528,23 @@ html[dir=rtl] .popover {
     background-color: #64d3b2!important;
 }
 .history-balance .panel.panel-orange {
-    background-color: #f8b032;
+    background-color: #ffd700;
 }
 .history-balance .panel.panel-orange .panel-footer {
-    background: #fbcd7c;
+    background: #ffd700;
     color: #fff!important;
 }
 .history-balance .panel.panel-orange .panel-footer:hover {
-    background: #f8b032;
+    background: #ffd700;
 }
 .history-balance .panel.panel-blue {
-    background-color: #275877;
+    background-color: #29aafbba;
 }
 .history-balance .panel.panel-blue .panel-footer {
-    background: #34749d;
+    background: #29aafbba;
 }
 .history-balance .panel.panel-blue .panel-footer:hover {
-    background: #275877;
+    background: #29aafbba;
 }
 .history-balance .panel.panel-light-blue {
     background-color: #266f9e;
@@ -16149,7 +16149,7 @@ form.inline-form .input-group input {
     position: relative;
 }
 #intro.index {
-    background-image: url(/assets/javascripts/generated-modules/index_1920_793c23ffe38afa23cd95dd48493142ce.jpg);
+    background-image: url(/images/pater.jpg);
     background-size: auto;
 }
 @media(min-width:1920px) {
@@ -16304,7 +16304,7 @@ form.inline-form .input-group input {
     float: right;
 }
 #intro .intro-cta h1 {
-    color: #3e4b92;
+    color: #333;
     text-transform: uppercase;
     font-weight: 800;
     margin-top: 75px;
@@ -20060,7 +20060,7 @@ form.exchange-form-1 .select-account .error-input span.amount-currency, form.exc
 }
 @media(max-width:1460px) {
     #intro.index {
-    background-image: url(/assets/javascripts/generated-modules/index_1460_eeafaf5446560d1a0fee3cfa1466233c.jpg);
+    background-image: url(/images/pater.png);
 }
 #intro.inner {
     background-image: url(/assets/javascripts/generated-modules/inner_1460_d0eb6370643c44055504c700f548c072.jpg);
