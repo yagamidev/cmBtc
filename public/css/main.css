@@ -15139,55 +15139,55 @@ html[dir=rtl] .popover {
     left: -12px;
 }
 #dashboard-content .content-header .controls a .icon-container .icon.icon-1, #dashboard-content .content-header .controls button .icon-container .icon.icon-1 {
-    background-image: url(/assets/images/icons/generated/wallet_account_sprite.png);
-    background-position: 0 -2152px;
+    background-image: url(/images/wallet_account_sprite.png);
+    background-position: 0 -2133px;
     width: 96px;
     height: 108px;
 }
 #dashboard-content .content-header .controls a .icon-container .icon.icon-2, #dashboard-content .content-header .controls button .icon-container .icon.icon-2 {
-    background-image: url(/assets/images/icons/generated/wallet_account_sprite.png);
-    background-position: 0 -2042px;
+    background-image:  url(/images/wallet_account_sprite.png);
+    background-position: 0 -2012px;
     width: 96px;
     height: 108px;
 }
 #dashboard-content .content-header .controls a .icon-container .icon.icon-3, #dashboard-content .content-header .controls button .icon-container .icon.icon-3 {
-    background-image: url(/assets/images/icons/generated/wallet_account_sprite.png);
-    background-position: 0 -2812px;
+    background-image:  url(/images/wallet_account_sprite.png);
+    background-position: 0 -2895px;
     width: 96px;
     height: 108px;
 }
 #dashboard-content .content-header .controls a .icon-container .icon.icon-4, #dashboard-content .content-header .controls button .icon-container .icon.icon-4 {
-    background-image: url(/assets/images/icons/generated/wallet_account_sprite.png);
+    background-image:  url(/images/wallet_account_sprite.png);
     background-position: 0 -2922px;
     width: 96px;
     height: 108px;
 }
 #dashboard-content .content-header .controls a .icon-container .icon.icon-5, #dashboard-content .content-header .controls button .icon-container .icon.icon-5 {
-    background-image: url(/assets/images/icons/generated/wallet_account_sprite.png);
+    background-image:  url(/images/wallet_account_sprite.png);
     background-position: 0 -502px;
     width: 96px;
     height: 108px;
 }
 #dashboard-content .content-header .controls a .icon-container .icon.icon-6, #dashboard-content .content-header .controls button .icon-container .icon.icon-6 {
-    background-image: url(/assets/images/icons/generated/wallet_account_sprite.png);
+    background-image:  url(/images/wallet_account_sprite.png);
     background-position: 0 -2702px;
     width: 96px;
     height: 108px;
 }
 #dashboard-content .content-header .controls a .icon-container .icon.icon-7, #dashboard-content .content-header .controls button .icon-container .icon.icon-7 {
-    background-image: url(/assets/images/icons/generated/wallet_account_sprite.png);
+    background-image:  url(/images/wallet_account_sprite.png);
     background-position: 0 -612px;
     width: 96px;
     height: 108px;
 }
 #dashboard-content .content-header .controls a .icon-container .icon.icon-8, #dashboard-content .content-header .controls button .icon-container .icon.icon-8 {
-    background-image: url(/assets/images/icons/generated/wallet_account_sprite.png);
+    background-image:  url(/images/wallet_account_sprite.png);
     background-position: 0 -1162px;
     width: 96px;
     height: 108px;
 }
 #dashboard-content .content-header .controls a .icon-container .icon.icon-9, #dashboard-content .content-header .controls button .icon-container .icon.icon-9 {
-    background-image: url(/assets/images/icons/generated/wallet_account_sprite.png);
+    background-image:  url(/images/wallet_account_sprite.png);
     background-position: 0 -1052px;
     width: 96px;
     height: 108px;
@@ -15195,7 +15195,7 @@ html[dir=rtl] .popover {
 #dashboard-content .content-header .controls a .icon-container .icon.icon-iban, #dashboard-content .content-header .controls button .icon-container .icon.icon-iban {
     top: -6px;
     left: -4px;
-    background-image: url(/assets/images/icons/generated/wallet_account_sprite.png);
+    background-image:  url(/images/wallet_account_sprite.png);
     background-position: 0 0;
     width: 80px;
     height: 66px;
@@ -15369,7 +15369,7 @@ html[dir=rtl] .popover {
 #dashboard-content .methods a .icon-container .icon.icon-btc {
     top: -21px;
     left: -16px;
-    background-image: url(/assets/images/icons/generated/wallet_account_sprite.png);
+    background-image:  url(/images/wallet_account_sprite.png);
     background-position: 0 -2482px;
     width: 96px;
     height: 108px;
@@ -15377,7 +15377,7 @@ html[dir=rtl] .popover {
 #dashboard-content .methods a .icon-container .icon.icon-dash {
     top: -6px;
     left: -8px;
-    background-image: url(/assets/images/icons/generated/wallet_account_sprite.png);
+    background-image:  url(/images/wallet_account_sprite.png);
     background-position: 0 -149px;
     width: 81px;
     height: 79px;
@@ -15385,7 +15385,7 @@ html[dir=rtl] .popover {
 #dashboard-content .methods a .icon-container .icon.icon-eth {
     top: -5px;
     left: -9px;
-    background-image: url(/assets/images/icons/generated/wallet_account_sprite.png);
+    background-image:  url(/images/wallet_account_sprite.png);
     background-position: 0 -230px;
     width: 81px;
     height: 79px;
@@ -15393,7 +15393,7 @@ html[dir=rtl] .popover {
 #dashboard-content .methods a .icon-container .icon.icon-nem {
     top: -7px;
     left: -8px;
-    background-image: url(/assets/images/icons/generated/wallet_account_sprite.png);
+    background-image:  url(/images/wallet_account_sprite.png);
     background-position: 0 -311px;
     width: 81px;
     height: 79px;
@@ -15401,7 +15401,7 @@ html[dir=rtl] .popover {
 #dashboard-content .methods a .icon-container .icon.icon-wallet {
     top: -22px;
     left: -17px;
-    background-image: url(/assets/images/icons/generated/wallet_account_sprite.png);
+    background-image:  url(/images/wallet_account_sprite.png);
     background-position: 0 -2262px;
     width: 96px;
     height: 108px;
@@ -15409,7 +15409,7 @@ html[dir=rtl] .popover {
 #dashboard-content .methods a .icon-container .icon.icon-crypto {
     top: -5px;
     left: -8px;
-    background-image: url(/assets/images/icons/generated/wallet_account_sprite.png);
+    background-image:  url(/images/wallet_account_sprite.png);
     background-position: 0 -68px;
     width: 81px;
     height: 79px;
@@ -15417,7 +15417,7 @@ html[dir=rtl] .popover {
 #dashboard-content .methods a .icon-container .icon.icon-voucher {
     top: -22px;
     left: -16px;
-    background-image: url(/assets/images/icons/generated/wallet_account_sprite.png);
+    background-image:  url(/images/wallet_account_sprite.png);
     background-position: 0 -392px;
     width: 96px;
     height: 108px;
@@ -15425,7 +15425,7 @@ html[dir=rtl] .popover {
 #dashboard-content .methods a .icon-container .icon.icon-emoney {
     top: -21px;
     left: -16px;
-    background-image: url(/assets/images/icons/generated/wallet_account_sprite.png);
+    background-image:  url(/images/wallet_account_sprite.png);
     background-position: 0 -1492px;
     width: 96px;
     height: 108px;
@@ -15433,7 +15433,7 @@ html[dir=rtl] .popover {
 #dashboard-content .methods a .icon-container .icon.icon-cash {
     top: -21px;
     left: -16px;
-    background-image: url(/assets/images/icons/generated/wallet_account_sprite.png);
+    background-image:  url(/images/wallet_account_sprite.png);
     background-position: 0 -832px;
     width: 96px;
     height: 108px;
@@ -15441,7 +15441,7 @@ html[dir=rtl] .popover {
 #dashboard-content .methods a .icon-container .icon.icon-bank {
     top: -25px;
     left: -15px;
-    background-image: url(/assets/images/icons/generated/wallet_account_sprite.png);
+    background-image:  url(/images/wallet_account_sprite.png);
     background-position: 0 -2372px;
     width: 96px;
     height: 108px;
@@ -15449,7 +15449,7 @@ html[dir=rtl] .popover {
 #dashboard-content .methods a .icon-container .icon.icon-mobile {
     top: -22px;
     left: -16px;
-    background-image: url(/assets/images/icons/generated/wallet_account_sprite.png);
+    background-image:  url(/images/wallet_account_sprite.png);
     background-position: 0 -1932px;
     width: 96px;
     height: 108px;
