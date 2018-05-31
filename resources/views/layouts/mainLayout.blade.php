@@ -239,48 +239,7 @@
 										Fees and Limits
 									</a>
 								</li>
-								<li>
-									<a href="en/terms.html">
-										Terms and Conditions
-									</a>
-								</li>
-								<li>
-									<a href="en/terms/privacyPolicy.html">
-										Privacy Policy
-									</a>
-								</li>
-								<li>
-									<a href="en/terms/riskWarning.html">
-										Risk Warning
-									</a>
-								</li>
-								<li>
-									<a href="en/terms/cookiePolicy.html">
-										Cookie Policy
-									</a>
-								</li>
 							</ul>
-						</div>
-						<div class="col-xs-12">
-							<div class="legal">
-								<a href="en/index.html">
-									<img src="{{ asset('/images/logo.png')}}" alt="CamerBitcoin logo" class="footer-logo" />
-								</a>
-								<p>Copyright &copy; 2018 CamerBitcoin Finance Ltd. All rights reserved</p>
-								<ul class="social-nav">
-									<li>
-										<a href="https://twitter.com/camerbitcoin" target="_blank">
-											<i class="fa fa-twitter"></i>
-										</a>
-									</li>
-									<li>
-										<a href="https://www.facebook.com/camerbitcoin" target="_blank">
-											<i class="fa fa-facebook"></i>
-										</a>
-									</li>
-								</ul>
-								<div class="clear"></div>
-							</div>
 						</div>
 					</div>
 				</div>
