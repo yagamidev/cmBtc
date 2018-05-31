@@ -18,7 +18,7 @@ class DashboardController extends Controller
             $wallets = DB::table("wallets")->select('*')->get();
             return view('dashboard',['wallets'=>$wallets]);
         }else{
-            return Redirect::to('login');
+            return Redirect::to('/en/login');
         }
         
      }
