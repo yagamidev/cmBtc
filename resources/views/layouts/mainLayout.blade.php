@@ -27,6 +27,7 @@
 		<meta name="theme-color" content="#204d6a" />
 		@section("script")
 		<script src="https://unpkg.com/popper.js"></script>
+	
 		<script>
 		if(/Android|webOS|iPhone|iPad|iPod|BlackBerry|BB|PlayBook|IEMobile|Windows Phone|Kindle|Silk|Opera Mini/i.test(navigator.userAgent)) {
 		document.querySelector('meta[name="twitter:card"]').setAttribute("content", "app");

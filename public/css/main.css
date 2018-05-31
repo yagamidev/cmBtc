@@ -16143,14 +16143,13 @@ form.inline-form .input-group input {
 }
 }
 #intro {
-    height: 470px;
+    height: 550px;
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-color: #fff;
     position: relative;
 }
 #intro.index {
-    background-image: url(/images/pater.jpg);
     background-size: auto;
 }
 @media(min-width:1920px) {
