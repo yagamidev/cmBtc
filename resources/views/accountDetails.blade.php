@@ -15,7 +15,21 @@
                                 <div class="content-title">
                                     <div class="row">
                                         <div class="col-xs-12">
-                                            <h1><span class="bt-stack bt-lg" style="color:#ffd700">
+                                            <h1><span class="bt-stack bt-lg" 
+                                                                                    @switch($accountInfo->currency_name) 
+                                                                                         @case('BCH') 
+                                                                                          @case('BTC')
+                                                                                                style="color:#ffd700"
+                                                                                                @break
+                                                                                          @case('LTC')
+                                                                                                style="color:#29aafbba"
+                                                                                            @break  
+                                                                                           @case('ETH')
+                                                                                                style="color:#333"
+                                                                                                @break
+                                                                                            @default
+                                                                                                style="color:#64d3b2;" 
+                                                                                            @endswitch  >
                                                 <i class="bt bt-shield bt-stack-2x"></i>
                                                 <i class="bt bt-{{ strtolower($accountInfo->currency_name)}} bt-stack-1x bt-inverse"></i>
                                             </span></h1>
@@ -23,13 +37,42 @@
                                     </div>
                                     <div class="row">
                                         <div class="col-lg-6 col-md-5 col-xs-5">
-                                            <button class="btn btn-primary sendReceiveBtn">
+
+                                            <button class="btn btn-primary sendReceiveBtn"  
+                                                                                    @switch($accountInfo->currency_name) 
+                                                                                         @case('BCH') 
+                                                                                          @case('BTC')
+                                                                                                style="background:#ffd700"
+                                                                                                @break
+                                                                                          @case('LTC')
+                                                                                                style="background:#29aafbba"
+                                                                                            @break  
+                                                                                           @case('ETH')
+                                                                                                style="background:#333"
+                                                                                                @break
+                                                                                            @default
+                                                                                                style="background:#64d3b2;" 
+                                                                                            @endswitch >
                                                 Send
                                                 <i class="fa fa-arrow-up fa-2x"></i>
                                             </button>
                                         </div>
-                                        <div class="col-lg-6 col-md-5 col-xs-5">
-                                            <button class="btn btn-primary sendReceiveBtn">
+                                        <div class="col-lg-6 col-md-5 col-xs-5" >
+                                            <button class="btn btn-primary sendReceiveBtn" 
+                                                                                     @switch($accountInfo->currency_name) 
+                                                                                         @case('BCH') 
+                                                                                          @case('BTC')
+                                                                                                style="background:#ffd700"
+                                                                                                @break
+                                                                                          @case('LTC')
+                                                                                                style="background:#29aafbba"
+                                                                                            @break  
+                                                                                           @case('ETH')
+                                                                                                style="background:#333"
+                                                                                                @break
+                                                                                            @default
+                                                                                                style="background:#64d3b2;" 
+                                                                                            @endswitch >
                                                 Request
                                                 <i class="fa fa-arrow-down fa-2x"></i>
                                             </button>
@@ -64,8 +107,8 @@
                                                     <span style="color: rgb(163, 163, 163); font-weight: bold;">
                                                                 {{ $accountInfo->address}}
                                                      </span><br/><br/>
-                                                     <button class="btn btn-default pull-right">
-                                                                Copy address <i class="fa fa-copy fa-2x"></i>
+                                                     <button class="customBtn pull-right">
+                                                                Copy address <i class="fa fa-copy"></i>
                                                         </button> 
                                                      
                                                  </div>
