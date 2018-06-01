@@ -5,7 +5,7 @@
         <div class="container">
             <div class="row">
                 <div class="col-lg-7 col-md-3 col-sm-4 col-xs-12" style="border:1px solid rgb(218, 225, 233)">
-                    Your latest transactions ...
+                    @include("partials.transactionDetails")
                 </div>
                 <div class="col-lg-5 col-md-9 col-sm-8 col-xs-12" style="border:1px solid rgb(218, 225, 233)">
                     <div class="loaderUI" style="display: none;"></div>
