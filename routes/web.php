@@ -23,7 +23,12 @@ Route::get('/en/signup',function(){
     return view('signup');
 })->name("signup");
 
-Route::get('/en/account/history/{currency_name}',"DashboardController@accountDetails");
+Route::get('/en/account/history/{currency_name}',"DashboardController@accountDetails")
+    ->where(['currency_name' => 'eth|ltc|btc|xaf|bch']);
+
+Route::get('/en/trade',function(){
+    return view("trade");
+});
 
 Route::get('/en/dashboard',"DashboardController@index")->name("dashboard");
 
@@ -31,6 +36,9 @@ Route::get('/logout',function(){
     Sentinel::logout(); 
     return View::make("welcome");
 })->name("logout");
+
+Route::get('/account/send/{currency_name}',"DashboardController@send")
+    ->where(['currency_name'=>'eth|ltc|btc|xaf|bch']);
 
 Route::post('/postLogin',"HomeController@postLogin");
 Route::post('/postRegister',"HomeController@postRegister");

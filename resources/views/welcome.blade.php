@@ -127,7 +127,7 @@
 	<div class="container">
 		<div class="row section-imgL-textR">
 			<div class="col-xs-12 col-sm-12 col-md-6 col-lg-6  section-left">
-				<img src="{{ asset('/images/yuscard.png')}}" alt=" CamerBitcoin Prepaid Card" />
+				<img src="{{ asset('/images/yuscard.jpeg')}}" alt=" CamerBitcoin Prepaid Card" />
 			</div>
 			<div class="col-xs-12 col-sm-12 col-md-6 col-lg-6  section-right">
 				<div class="section-title-major">YusCard Prepaid Card</div>
@@ -163,7 +163,7 @@
 		</div>
 	</div>
 </div>
-<div id="index_section6" class="bg-section section-more">
+<!-- <div id="index_section6" class="bg-section section-more">
 	<div class="container">
 		<div class="row section-center">
 			<div class="col-lg-12">
@@ -187,7 +187,7 @@
 			</div>
 		</div>
 	</div>
-</div>
+</div> -->
 <div id="index_section7" class="bg-section">
 	<div class="container">
 		<div class="row section-textL-imgR">

@@ -4,10 +4,10 @@
     <div id="dashboard">
         <div class="container">
             <div class="row">
-                <div class="col-lg-7 col-md-3 col-sm-4 col-xs-12" style="border:1px solid rgb(218, 225, 233)">
+                <div class="col-lg-7 col-md-3 col-sm-4 col-xs-12" style="margin-top:50px">
                     @include("partials.transactionDetails")
                 </div>
-                <div class="col-lg-5 col-md-9 col-sm-8 col-xs-12" style="border:1px solid rgb(218, 225, 233)">
+                <div class="col-lg-5 col-md-9 col-sm-8 col-xs-12" style="">
                     <div class="loaderUI" style="display: none;"></div>
                     <section id="dashboard-content" style="">
                         <div class="row">
@@ -16,20 +16,20 @@
                                     <div class="row">
                                         <div class="col-xs-12">
                                             <h1><span class="bt-stack bt-lg" 
-                                                                                    @switch($accountInfo->currency_name) 
-                                                                                         @case('BCH') 
-                                                                                          @case('BTC')
-                                                                                                style="color:#ffd700"
-                                                                                                @break
-                                                                                          @case('LTC')
-                                                                                                style="color:#29aafbba"
-                                                                                            @break  
-                                                                                           @case('ETH')
-                                                                                                style="color:#333"
-                                                                                                @break
-                                                                                            @default
-                                                                                                style="color:#64d3b2;" 
-                                                                                            @endswitch  >
+                                             @switch($accountInfo->currency_name) 
+                                                @case('BCH') 
+                                                @case('BTC')
+                                                style="color:#ffd700"
+                                                    @break
+                                                @case('LTC')
+                                                style="color:#29aafbba"
+                                                    @break  
+                                                @case('ETH')
+                                                style="color:#333"
+                                                    @break
+                                                @default
+                                                style="color:#64d3b2;" 
+                                                 @endswitch  >
                                                 <i class="bt bt-shield bt-stack-2x"></i>
                                                 <i class="bt bt-{{ strtolower($accountInfo->currency_name)}} bt-stack-1x bt-inverse"></i>
                                             </span></h1>
@@ -37,45 +37,47 @@
                                     </div>
                                     <div class="row">
                                         <div class="col-lg-6 col-md-5 col-xs-5">
-
+                                            <a href="/account/send/{{ strtolower($accountInfo->currency_name)}}">
                                             <button class="btn btn-primary sendReceiveBtn"  
-                                                                                    @switch($accountInfo->currency_name) 
-                                                                                         @case('BCH') 
-                                                                                          @case('BTC')
-                                                                                                style="background:#ffd700"
-                                                                                                @break
-                                                                                          @case('LTC')
-                                                                                                style="background:#29aafbba"
-                                                                                            @break  
-                                                                                           @case('ETH')
-                                                                                                style="background:#333"
-                                                                                                @break
-                                                                                            @default
-                                                                                                style="background:#64d3b2;" 
-                                                                                            @endswitch >
-                                                Send
+                                                @switch($accountInfo->currency_name) 
+                                                 @case('BCH') 
+                                                 @case('BTC')
+                                                   style="background:#ffd700"
+                                                 @break
+                                                @case('LTC')
+                                                style="background:#29aafbba"
+                                                    @break  
+                                                @case('ETH')
+                                                style="background:#333"
+                                                    @break
+                                                    @default
+                                                     style="background:#64d3b2;" 
+                                                 @endswitch >
+                                                    Send
                                                 <i class="fa fa-arrow-up fa-2x"></i>
-                                            </button>
+                                            </button></a>
                                         </div>
                                         <div class="col-lg-6 col-md-5 col-xs-5" >
+                                        <a href="/account/request/{{ strtolower($accountInfo->currency_name)}}">
                                             <button class="btn btn-primary sendReceiveBtn" 
-                                                                                     @switch($accountInfo->currency_name) 
-                                                                                         @case('BCH') 
-                                                                                          @case('BTC')
-                                                                                                style="background:#ffd700"
-                                                                                                @break
-                                                                                          @case('LTC')
-                                                                                                style="background:#29aafbba"
-                                                                                            @break  
-                                                                                           @case('ETH')
-                                                                                                style="background:#333"
-                                                                                                @break
-                                                                                            @default
-                                                                                                style="background:#64d3b2;" 
-                                                                                            @endswitch >
-                                                Request
+                                                 @switch($accountInfo->currency_name) 
+                                                  @case('BCH') 
+                                                     @case('BTC')
+                                                    style="background:#ffd700"
+                                                    @break
+                                                    @case('LTC')
+                                                    style="background:#29aafbba"
+                                                    @break  
+                                                    @case('ETH')
+                                                    style="background:#333"
+                                                    @break
+                                                     @default
+                                                     style="background:#64d3b2;" 
+                                                    @endswitch >
+                                                    Request
                                                 <i class="fa fa-arrow-down fa-2x"></i>
                                             </button>
+                                            </a>
                                         </div> 
                                         </div>
                                 </div>
@@ -104,7 +106,7 @@
                                         <div class="col-lg-8 col-md-9 col-xs-12">
                                             <div class="btc-wallet-address">
                                                 <div class="code">
-                                                    <span style="color: rgb(163, 163, 163); font-weight: bold;">
+                                                    <span style="color: rgb(163, 163, 163); font-weight: bold; word-wrap:break-word">
                                                                 {{ $accountInfo->address}}
                                                      </span><br/><br/>
                                                      <button class="customBtn pull-right">

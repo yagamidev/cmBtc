@@ -21,13 +21,11 @@
 		<meta property="og:image:width" content="1200" />
 		<meta property="og:image:height" content="630" />
 		<meta name="twitter:card" content="summary_large_image" />
-		<meta name="twitter:site" content="&#64;CamerBitcoin" />
+		<meta name="twitter:site" content="CamerBitcoin" />
 		<meta name="twitter:image:width" content="626" />
 		<meta name="twitter:image:height" content="335" />
 		<meta name="theme-color" content="#204d6a" />
 		@section("script")
-		<script src="https://unpkg.com/popper.js"></script>
-	
 		<script>
 		if(/Android|webOS|iPhone|iPad|iPod|BlackBerry|BB|PlayBook|IEMobile|Windows Phone|Kindle|Silk|Opera Mini/i.test(navigator.userAgent)) {
 		document.querySelector('meta[name="twitter:card"]').setAttribute("content", "app");
@@ -36,16 +34,16 @@
 		<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
 		<script src="{{ asset('/js/main.js')}}"></script>
 		<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js" integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T" crossorigin="anonymous"></script>
-		<script>
+		<!-- <script>
 		if (/MSIE 10/i.test(navigator.userAgent) || /MSIE 9/i.test(navigator.userAgent) || /rv:11.0/i.test(navigator.userAgent) ) {
 		document.write('<link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300italic,400,400italic,600,600italic,700,700italic,800,800italic&subset=latin,latin-ext,cyrillic" rel="stylesheet">')
 		}
-		</script>
+		</script> -->
 		@show
 		@section("stylesheet")
-		<link rel="stylesheet" href="{{ asset('/css/main.css') }}">
 		<link rel="stylesheet" href="https://bitonics.net/vendor/bitonics/bitonics.min.css">
-		<!-- <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB" crossorigin="anonymous"> -->
+		<!-- <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-WskhaSG	FgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB" crossorigin="anonymous"> -->
+		<link rel="stylesheet" href="{{ asset('/css/main.css') }}">
 		<link rel="stylesheet" href="{{ asset('css/custom.css')}}">
 		<link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
 		@show
@@ -56,7 +54,6 @@
 					window.onload = function() {
 						//GLOBAL JAVASCRIPTS
 						EntryPoint.initBase(baseJsRoutes)
-						EntryPoint.ajaxSetup("0332342e50d131f65685055f4e29821f83edfaa0-1526725900169-c00a4374716342ce30c572df")
 						EntryPoint.header()
 						EntryPoint.footer()
 						EntryPoint.selectizeSetup()
@@ -90,7 +87,7 @@
 			</div>
 			<header id="header" class="header">
 				<a href="/" class="logo">
-					<img src="{{ asset('images/camerbitcoinLogo.png')}}" alt="CamerBitcoin" />
+					<img src="{{ asset('images/logo.jpeg')}}" alt="CamerBitcoin" />
 				</a>
 				<div class="components-row">
 					<button id="nav-trigger" class="nav-trigger"><span></span><span></span><span></span></button>
@@ -146,8 +143,8 @@
 							</a>
 						</li>
 						<li class="">
-							<a href="en/accept-bitcoin-payments.html" title="Merchants">
-								Merchants
+							<a href="/en/trade" title="Merchants">
+								Trade
 							</a>
 						</li>
 						<li class="">
