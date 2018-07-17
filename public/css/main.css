@@ -2,6 +2,33 @@ body {
     overflow-x: hidden;
 }
 
+.sidebar-link:hover,
+.sidebar-link:focus {
+    text-decoration: none;
+}
+
+.a_i.sidebar-link-container {
+    display: flex;
+    align-items: center;
+}
+
+.sidebar-link-container .v_f {
+    margin-left: 1rem;
+}
+
+.sidebar-link-container .a_m {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.sidebar-link-container .wallet-currency-name {
+    font-size: 2rem;
+    color: #a0a0a0;
+}
+
+
+
 .selectize-control.plugin-drag_drop.multi>.selectize-input>div.ui-sortable-placeholder {
     visibility: visible!important;
     background: #f2f2f2!important;
