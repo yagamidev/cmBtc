@@ -44,10 +44,11 @@
 		<link rel="stylesheet" href="https://bitonics.net/vendor/bitonics/bitonics.min.css">
 		<!-- <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-WskhaSG	FgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB" crossorigin="anonymous"> -->
 		<link rel="stylesheet" href="{{ asset('/css/main.css') }}">
+		<link rel="stylesheet" href="{{ asset('/css/header.css') }}">
 		<link rel="stylesheet" href="{{ asset('css/custom.css')}}">
 		<link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
 		@show
-		
+
 		<script>
 		var myJsRoutes = {}; (function(_root){})(myJsRoutes)
 		var baseJsRoutes= null;
@@ -60,7 +61,7 @@
 						EntryPoint.popover()
 						EntryPoint.tooltip()
 						EntryPoint.copyElement()
-									
+
 		EntryPoint.index(
 				false,
 				myJsRoutes,
