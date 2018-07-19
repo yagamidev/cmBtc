@@ -149,7 +149,7 @@
 							</a>
 						</li>
 						<li class="">
-							<a href="en/contact.html" title="Contact">
+							<a href="/en/contact" title="Contact">
 								Contact
 							</a>
 						</li>

@@ -1,4 +1,4 @@
-<div id='id-alerts' class='row'>
+ <div id='id-alerts' class='row'>
   <div id='alert-fail' class="alert alert-danger alert-dismissible col-md-12" role="alert" style="display:none;">
     <div id='fail-message'></div>
     <button id='close_fail' type="button" class="close" aria-label="Close">
