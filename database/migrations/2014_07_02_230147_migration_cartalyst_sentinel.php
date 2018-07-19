@@ -102,7 +102,7 @@ class MigrationCartalystSentinel extends Migration
             $table->timestamp('last_login')->nullable();
             $table->string('first_name')->nullable();
             $table->string('last_name')->nullable();
-            $table->string('nationality')->nullable(); 
+            $table->string('nationality')->nullable();
             $table->timestamps();
 
             $table->engine = 'InnoDB';
@@ -127,15 +127,17 @@ class MigrationCartalystSentinel extends Migration
                 $table->decimal('btc_amount',18,9);
                 $table->string('type',100);
                 $table->timestamp('trade_date');
+                $table->timestamps();
         });
 
         Schema::create('transactions',function(Blueprint $table){
                 $table->increments("id");
                 $table->integer("from_user_id");
                 $table->integer("to_user_id");
-                $table->string("tx_type",30);  // sending or receiving 
+                $table->string("tx_type",30);  // sending or receiving
                 $table->decimal("amount",18,9);
                 $table->string("status",20);
+                $table->timestamps();
 
         });
 
@@ -146,6 +148,7 @@ class MigrationCartalystSentinel extends Migration
             $table->string('type',10);
             $table->decimal('btc_amount',18,9);
             $table->decimal('price',18,9);
+            $table->timestamps();
 
         });
 
@@ -155,9 +158,21 @@ class MigrationCartalystSentinel extends Migration
             $table->integer('user_id');
             $table->string("currency_name",10);
             $table->string("address",255)->nullable();
-            $table->string("label",30); 
-            $table->decimal("balance",18,9)->default(0.0000000); 
-        }); 
+            $table->string("label",30);
+            $table->decimal("balance",18,9)->default(0.0000000);
+            $table->timestamps();
+        });
+
+        Schema::create('contact',function(Blueprint $table){
+          $table->increments('id');
+          $table->integer('user_id')->nullable();
+          $table->string("name",200)->nullable();
+          $table->string("subject",200);
+          $table->string("phone",200)->nullable();
+          $table->string("email",200);
+          $table->text("question");
+          $table->timestamps();
+        });
     }
 
     /**
