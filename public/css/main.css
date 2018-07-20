@@ -27,6 +27,23 @@ body {
     color: #a0a0a0;
 }
 
+.d-flex {
+    display: flex;
+}
+
+.flex-column {
+    flex-direction: column;
+}
+
+.align-items-center {
+    align-items: center;
+}
+
+.justify-space-between {
+    justify-content: space-between;
+}
+
+
 
 
 .selectize-control.plugin-drag_drop.multi>.selectize-input>div.ui-sortable-placeholder {
