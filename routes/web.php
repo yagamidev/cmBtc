@@ -63,6 +63,10 @@ Route::get('/en/trade',function(){
     return view("trade");
 });
 
+Route::get('/en/exchange',function(){
+  return view('exchange');
+});
+
 Route::get('/en/dashboard',"DashboardController@index")->name("dashboard");
 
 Route::get('/logout',function(){
