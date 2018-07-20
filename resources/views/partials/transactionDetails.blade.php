@@ -5,7 +5,7 @@
 <script>
 $(document).ready(function() {
     $('#example').DataTable( {
-        "scrollY":        "200px",
+        "scrollY":        "350px",  
         "scrollCollapse": true,
         "paging":         false
     } );
