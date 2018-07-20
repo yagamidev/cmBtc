@@ -43,7 +43,10 @@ body {
     justify-content: space-between;
 }
 
-
+.transaction-details-table {
+    height: 350px;
+    overflow-y: auto;
+}
 
 
 .selectize-control.plugin-drag_drop.multi>.selectize-input>div.ui-sortable-placeholder {

@@ -100,7 +100,8 @@
                 </div>
             </section>
             <div class="row">
-                <div class="col-md-8 col-md-offset-2" style="margin-top:50px; margin-bottom: 50px;">
+                <div class="col-md-10 col-md-offset-1" style="margin-top:50px; margin-bottom: 50px;">
+                    <h2 class="text-left">Transactions history</h2>
                     @include("partials.transactionDetails")
                 </div>
             </div>
