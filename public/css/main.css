@@ -43,8 +43,16 @@ body {
     justify-content: space-between;
 }
 
+.exchange-form {
+    max-width: 600px;
+    width: 100%;
+    margin: 3rem auto 0;
+}
 
-
+.exchange-form .form-group {
+    margin-left: 1rem;
+    margin-right: 1rem;
+}
 
 .selectize-control.plugin-drag_drop.multi>.selectize-input>div.ui-sortable-placeholder {
     visibility: visible!important;
