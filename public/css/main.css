@@ -43,9 +43,21 @@ body {
     justify-content: space-between;
 }
 
+/* Just in case these lines disturb*/
 .transaction-details-table {
     height: 350px;
     overflow-y: auto;
+}
+
+.exchange-form {
+    max-width: 600px;
+    width: 100%;
+    margin: 3rem auto 0;
+}
+
+.exchange-form .form-group {
+    margin-left: 1rem;
+    margin-right: 1rem;
 }
 
 
