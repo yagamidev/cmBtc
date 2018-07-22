@@ -1,17 +1,5 @@
-<!--Table-->
-<link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.10.16/css/jquery.dataTables.css">
-  
-<script type="text/javascript" charset="utf8" src="https://cdn.datatables.net/1.10.16/js/jquery.dataTables.min.js"></script>
-<script>
-$(document).ready(function() {
-    $('#example').DataTable( {
-        "scrollY":        "350px",  
-        "scrollCollapse": true,
-        "paging":         false
-    } );
-} );
-</script>
-<table id="example" class="display" style="width:100%">
+<div class="responsive-table transaction-details-table">
+    <table id="transaction-details" class="table table-striped table-bordered table-hover">
         <thead>
             <tr>
                 <th>Name</th>
@@ -491,4 +479,4 @@ $(document).ready(function() {
             </tr>
         </tfoot>
     </table>
-<!--Table-->
+</div>

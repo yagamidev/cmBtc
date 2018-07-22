@@ -43,6 +43,12 @@ body {
     justify-content: space-between;
 }
 
+/* Just in case these lines disturb*/
+.transaction-details-table {
+    height: 350px;
+    overflow-y: auto;
+}
+
 .exchange-form {
     max-width: 600px;
     width: 100%;
@@ -53,6 +59,7 @@ body {
     margin-left: 1rem;
     margin-right: 1rem;
 }
+
 
 .selectize-control.plugin-drag_drop.multi>.selectize-input>div.ui-sortable-placeholder {
     visibility: visible!important;
